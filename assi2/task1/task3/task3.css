@@ -1,0 +1,112 @@
+/* Сброс */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f9fc;
+  padding: 30px;
+  color: #333;
+}
+
+/* Заголовок страницы */
+#grades-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #001a8f;
+}
+
+/* ===== Таблица ===== */
+.grades-table {
+  width: 80%;
+  margin: 0 auto 40px auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+.grades-table th {
+  background-color: #001a8f;
+  color: #fff;
+  padding: 12px;
+}
+.grades-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Чередующиеся цвета строк */
+.grades-table tbody tr:nth-child(odd) {
+  background-color: #eef3ff;
+}
+.grades-table tbody tr:nth-child(even) {
+  background-color: #dfe8ff;
+}
+
+/* Выделенная строка */
+.highlight-row {
+  background-color: #ffd966 !important;
+  font-weight: bold;
+}
+
+/* ===== Форма ===== */
+#feedback-heading {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #001a8f;
+}
+
+.feedback-form {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.feedback-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form select,
+.feedback-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.feedback-form .question {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.feedback-form input[type="radio"] {
+  margin-right: 6px;
+}
+
+.feedback-form button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #001a8f;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.feedback-form button:hover {
+  background-color: #0030c0;
+}
